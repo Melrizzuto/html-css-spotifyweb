@@ -104,6 +104,7 @@ main nav a:after {
     margin: 0 auto;
 
 }
+
 main nav a:hover::after {
     background-color: var(--color-highlight);
 }
@@ -123,6 +124,7 @@ img {
 
 section {
     margin-top: 20px;
+    padding: 10px 20px;
 }
 
 h2 {
@@ -148,6 +150,16 @@ footer {
     flex: 0 0 210px;
     background-color: var(--color-black);
 
+}
+
+.logo-spotify img {
+    width: 70%;
+    max-width: 100%;
+    margin: 10px;
+}
+
+.only-mobile {
+    display: none;
 }
 
 main {
@@ -181,9 +193,9 @@ main {
 
 }
 
-.card-image img{
+.card-image img {
     border-radius: 20px;
-    
+
 }
 
 .card:hover .card-image::after {
@@ -209,10 +221,11 @@ main {
     font-size: 10px;
 }
 
-.radius-img img{
+.radius-img img {
     width: 100%;
     border-radius: 100%;
 }
+
 small {
     color: var(--color-lightgrey);
 }
@@ -251,15 +264,17 @@ section>small {
     #sidebar {
         flex: 0 0 50px;
     }
-    .card{
+
+    .card {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
-    .card-image{
+
+    .card-image {
         width: 60%;
-        
+
     }
 
     header {
@@ -272,12 +287,28 @@ section>small {
     }
 
     h2,
-    section>small{
+    section>small {
         text-align: center;
     }
 
     ul li a {
         padding: 0 6px;
         font-size: 10px;
+    }
+
+    .logo-spotify {
+        display: none;
+    }
+
+    .only-mobile {
+        display: block;
+    }
+
+    .only-mobile img {
+        width: 70%;
+        max-width: 100%;
+        margin: 8px;
+
+
     }
 }
