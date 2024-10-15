@@ -60,9 +60,13 @@ ul {
     margin-top: 20px;
 }
 
-a {
+nav a {
     text-decoration: none;
-    color: var(--color-lightgrey);
+    color: grey;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 15px;
+    display: block;
 }
 
 ul li a{
