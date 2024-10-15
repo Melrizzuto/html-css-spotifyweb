@@ -1,0 +1,73 @@
+/***************** 
+general 
+*****************/
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.debug {
+    border: 1px solid red;
+}
+
+
+
+/* settings body */
+body {
+
+    background-color: var(--color-darkgrey);
+    font-family: "Montserrat", serif;
+    color: var(--color-light);
+}
+
+:root {
+    --color-dark: #141922;
+    --color-darkgrey: #282828;
+    --color-light: #ffffff;
+    --color-black: #000000;
+    --color-lightgrey: #c1c1c1;
+    --color-highlight: #9ae22d;
+    --color-redcolor: #ca1717;
+}
+
+
+.wrapper {
+    background-color: var(--color-dark);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.upper-content {
+    background-color: var (--color-dark);
+    flex: 1 1 auto;
+    display: flex;
+}
+
+footer {
+    background-color: var(--color-darkgrey);
+    flex: 0 0 100px;
+}
+
+#sidebar{
+    flex: 0 0 230px;
+    background-color: var(--color-black);
+    height: calc(100vh - 100px);
+}
+main{
+    flex: 1 1 auto;
+    overflow-y: auto;
+}
+.header{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: sticky;
+    height: 70px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100000;
+
+}
