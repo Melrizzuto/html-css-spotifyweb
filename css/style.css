@@ -96,7 +96,7 @@ a:hover {
     color: var(--color-light);
 }
 
-main nav a:last-child:after {
+main nav a:after {
     content: '';
     display: block;
     width: 40px;
@@ -104,7 +104,7 @@ main nav a:last-child:after {
     margin: 0 auto;
 
 }
-main nav a:last-child:hover::after {
+main nav a:hover::after {
     background-color: var(--color-highlight);
 }
 
@@ -189,8 +189,13 @@ main {
 .card-text {
     text-align: center;
     padding: 10px 0;
+    font-size: 10px;
 }
 
+.radius-img img{
+    width: 100%;
+    border-radius: 100%;
+}
 small {
     color: var(--color-lightgrey);
 }
