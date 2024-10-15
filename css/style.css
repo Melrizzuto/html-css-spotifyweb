@@ -32,7 +32,7 @@ body {
 }
 
 /* button utilities */
-.button{
+.button {
     display: block;
     text-decoration: none;
     width: 140px;
@@ -47,8 +47,14 @@ body {
     font-weight: 600;
     color: var(--color-light);
     padding: 5px;
-    
+
 }
+
+.button:hover {
+    color: var(--color-light);
+    opacity: 0.5;
+}
+
 /* Flex Utility */
 .d-flex {
     display: flex;
@@ -90,8 +96,8 @@ a:hover {
     color: var(--color-light);
 }
 
-ul li a{
-    padding: 0 20px ;
+ul li a {
+    padding: 0 20px;
 }
 
 
@@ -126,15 +132,17 @@ footer {
     flex: 0 0 100px;
 }
 
-#sidebar{
+#sidebar {
     flex: 0 0 210px;
     background-color: var(--color-black);
 
 }
-main{
+
+main {
     flex: 1 1 auto;
     overflow-y: auto;
 }
+
 .header {
     background-color: rgba(0, 0, 0, 0.5);
     position: sticky;
