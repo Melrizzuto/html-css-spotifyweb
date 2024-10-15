@@ -21,22 +21,84 @@
 </head>
 
 <body>
-    <div class="wrapper debug">
-        <div class="upper-content debug">
+    <!-- contenitore webapp -->
+    <div class="wrapper d-flex f-column">
+        <div class="upper-content d-flex  debug">
+            <!-- Sidebar -->
             <div id="sidebar" class="debug">
                 this is sidebar
             </div>
             <main class="debug">
-                <div class="header debug">
-                    this is header
+                <!-- header -->
+                <div class="header">
+                    <a href="#">Button</a>
                 </div>
-                <div class="main-content debug">
-                    this is main content
+                <!-- main content -->
+                <div class="main-content">
+                    <!-- navbar -->
+                    <nav class="d-flex j-center">
+                        <ul class="d-flex j-center f-wrap">
+                            <li><a href="#">In evidenza</a></li>
+                            <li><a href="#">Podcast</a></li>
+                            <li><a href="#">Classifiche</a></li>
+                            <li><a href="#">Generi e mood</a></li>
+                            <li><a href="#">Nuove uscite</a></li>
+                            <li><a href="#">Scopri</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- inizia prima sezione -->
+                    <section id="recently" class="debug">
+
+                        <h2>Recently played</h2>
+
+                        <div class="row d-flex f-wrap">
+                            <div class="col debug">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="img/metal_lifting.jpg" alt="Heavy Metal">
+                                    </div>
+                                    <div class="card-text">
+                                        <h3>Heavy Metal</h3>
+                                        <small>Subtitle</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col debug">
+
+                            </div>
+                            <div class="col debug">
+
+                            </div>
+                            <div class="col debug">
+
+                            </div>
+                            <div class="col debug">
+
+                            </div>
+                            <div class="col debug">
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- inizia seconda sezione -->
+                    <section id="foryou" class="debug">
+                        <h2>Creato per Jhon Doe</h2>
+                        <small>Più ascolti, più accurati saranno i suggerimenti.</small>
+                    </section>
+
+                    <!-- inizia terza sezione -->
+                    <section id="popular" class="debug">
+                        <h2>Artisti più popolari</h2>
+                        <small>Più ascolti, più accurati saranno i suggerimenti.</small>
+                    </section>
                 </div>
             </main>
         </div>
+        <!-- footer -->
         <footer class="debug">
-            this is footer
+
         </footer>
     </div>
 </body>
