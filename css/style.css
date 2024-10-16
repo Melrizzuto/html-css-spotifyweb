@@ -9,9 +9,9 @@ general (Desktop first)
     box-sizing: border-box;
 }
 
-/* .debug {
+.debug {
     border: 1px solid red;
-} */
+}
 
 /* custom properties */
 :root {
@@ -108,9 +108,16 @@ ul li a:hover {
     justify-content: center;
 }
 
+.a-center{
+    align-items: center;
+}
 
 .f-wrap {
     flex-wrap: wrap;
+}
+
+.spacebetween{
+    justify-content: space-between;
 }
 
 /* Page settings */
@@ -167,7 +174,7 @@ ul li a:hover {
 }
 
 #sidebar a:hover {
-color: var(--color-light);
+    color: var(--color-light);
     line-height: 1.5;
 }
 
@@ -295,9 +302,11 @@ color: var(--color-light);
     font-size: 12px;
     font-weight: 600;
 }
-.user-profile{
-margin-left: 3px;
+
+.user-profile {
+    margin-left: 3px;
 }
+
 hr {
     width: 90%;
     height: 1px;
@@ -491,6 +500,15 @@ section>small {
 footer {
     background-color: var(--color-darkgrey);
     flex: 0 0 100px;
+}
+
+.playbar-left img {
+    width: 20%;
+    max-width: 100%;
+}
+
+.playbar-left {
+    display: flex;
 }
 
 /**** media queries ****/
