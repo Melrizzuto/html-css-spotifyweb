@@ -277,12 +277,14 @@ main {
 
 .card:hover .card-image img {
     transform: scale(1.1);
+    opacity: 0.5;
 }
 
 
 .card:hover .play-icon {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
+    box-shadow: 1px 1px 5px var(--color-black);
 }
 
 .radius-img img {
