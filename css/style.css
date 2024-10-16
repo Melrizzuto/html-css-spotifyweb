@@ -97,10 +97,19 @@ body {
 
 }
 
+
 .logo-spotify img {
     width: 70%;
     max-width: 100%;
     margin: 10px;
+}
+
+.logo-spotify{
+    transition: transform 0.5s ease;
+}
+
+.logo-spotify:hover {
+    transform: scale(1.1); 
 }
 
 /* Settings per mobile */
@@ -218,7 +227,7 @@ main {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    max-width: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
 }
@@ -290,7 +299,7 @@ section>small {
     display: block;
 }
 
-/* Footer settings */
+/* Playbar settings */
 
 footer {
     background-color: var(--color-darkgrey);
@@ -334,7 +343,7 @@ footer {
     }
 
     .card-image {
-        width: 60%;
+        width: 90%;
 
     }
 
@@ -363,6 +372,11 @@ footer {
 
     .only-mobile {
         display: block;
+        transition: transform 0.5s ease;
+    }
+
+    .only-mobile:hover {
+        transform: scale(1.1); 
     }
 
     .only-mobile img {
