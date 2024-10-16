@@ -94,28 +94,64 @@ body {
 #sidebar {
     flex: 0 0 230px;
     background-color: var(--color-black);
+    min-height: 400px;
+    overflow: hidden;
+}
+
+.sidebar-top{
+    height: calc(100% - 50px);
+}
+
+.sidebar-bottom {
+    height: 50px;
+    background-color: var(--color-black);
+}
+
+.logo-spotify,
+.main-nav a,
+.playlist-nav a{
+    display: block;
+}
+
+.playlist-nav{
+    flex: 1 1 auto;
+    min-height: 0;
+}
+
+.playlist-nav ul{
+    flex: 1 1 auto;
+    overflow-y: auto;
+}
+
+#sidebar .main-nav img{
+    height: 25px;
+    width: auto;
+    display: inline;
 }
 
 #sidebar ul {
-    padding: 10px 20px;
+    padding: 0px 25px;
     color: grey;
     line-height: 1.5;
     font-size: 12px;
     font-weight: 600;
+    margin-top: 5px;
 }
 
-.large-txt {
-    font-size: 15px;
+.add-playlist i{
+    margin: 5px 0px 0 25px;
+    
 }
-
-.fa-square-plus {
-    font-size: 18px;
+.add-playlist {
+    font-size: 14px;
+    font-weight: 600;
 }
-
 
 #sidebar a {
     text-decoration: none;
     color: grey;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 #sidebar a:hover {
@@ -142,7 +178,7 @@ body {
 .logo-spotify img {
     width: 70%;
     max-width: 100%;
-    margin: 25px;
+    margin: 0 25px;
 }
 
 .logo-spotify {
@@ -388,6 +424,10 @@ footer {
 @media screen and (max-width: 768px) {
     .main-content .col {
         width: calc(100% / 2);
+    }
+
+    .card h3:nth-child(2){
+        text-overflow: ellipsis;
     }
 
     ul li a {
