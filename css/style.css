@@ -529,6 +529,8 @@ footer {
 
 .playbar-right {
     width: 25%;
+    display: flex;
+    margin: 10px 10px;
 }
 
 .track-name {
