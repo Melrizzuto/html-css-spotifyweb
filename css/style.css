@@ -155,6 +155,11 @@ ul {
 
 ul li a {
     padding: 0 15px;
+    transition: transform 0.5s ease;
+}
+
+ul li a:hover {
+    transform: scale(1.1);
 }
 
 main nav a:after {
