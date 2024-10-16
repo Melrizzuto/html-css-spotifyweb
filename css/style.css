@@ -9,9 +9,9 @@ general (Desktop first)
     box-sizing: border-box;
 }
 
-/* .debug {
+.debug {
     border: 1px solid red;
-} */
+}
 
 /* custom properties */
 :root {
@@ -57,6 +57,26 @@ body {
     transform: scale(1.1);
 }
 
+/* custom scrollbar setting */
+.scrollbar-style::-webkit-scrollbar {
+    width: 10px;
+}
+
+.scrollbar-style::-webkit-scrollbar-track {
+    background: var(--color-black);
+}
+
+.scrollbar-style::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 10px;
+    border: 2px solid var(--color-black);
+}
+
+.scrollbar-style::-webkit-scrollbar-thumb:hover {
+    background-color: #888;
+}
+
+
 /* Flex Utility */
 .d-flex {
     display: flex;
@@ -76,6 +96,11 @@ body {
 
 /* Page settings */
 
+/* Settings per mobile */
+
+.only-mobile {
+    display: none;
+}
 .wrapper {
     background-color: var(--color-dark);
     height: 100vh;
@@ -96,6 +121,35 @@ body {
     background-color: var(--color-black);
     min-height: 400px;
     overflow: hidden;
+}
+
+#sidebar a {
+    text-decoration: none;
+    color: grey;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#sidebar a:hover {
+    color: var(--color-light);
+    line-height: 2;
+}
+
+#sidebar h3 {
+    text-transform: uppercase;
+    color: grey;
+    margin: 0px 25px;
+    font-size: 14px;
+    color: var(--color-light);
+    margin-top: 10px;
+
+}
+
+#sidebar i {
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding-right: 5px;
+
 }
 
 #sidebar .main-nav img{
@@ -156,6 +210,13 @@ body {
     vertical-align: middle; 
 }
 
+#sidebar .main-nav a{
+    border-left: 2px solid transparent;
+}
+
+#sidebar .main-nav a:hover{
+    border-left: 2px solid var(--color-highlight);
+}
 
 .add-playlist i{
     margin: 5px 0px 0 25px;
@@ -166,34 +227,6 @@ body {
     font-weight: 600;
 }
 
-#sidebar a {
-    text-decoration: none;
-    color: grey;
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-
-#sidebar a:hover {
-    color: var(--color-light);
-    line-height: 2;
-}
-
-#sidebar h3 {
-    text-transform: uppercase;
-    color: grey;
-    margin: 0px 25px;
-    font-size: 14px;
-    color: var(--color-light);
-    margin-top: 10px;
-
-}
-
-#sidebar i {
-    font-size: 14px;
-    margin-bottom: 10px;
-    padding-right: 5px;
-
-}
 
 .logo-spotify img {
     width: 70%;
@@ -210,10 +243,6 @@ body {
 }
 
 
-/* Settings per mobile */
-.only-mobile {
-    display: none;
-}
 
 /* Header settings  */
 .header {
@@ -301,23 +330,7 @@ main {
 
 }
 
-.scrollbar-style::-webkit-scrollbar {
-    width: 10px;
-}
 
-.scrollbar-style::-webkit-scrollbar-track {
-    background: var(--color-black);
-}
-
-.scrollbar-style::-webkit-scrollbar-thumb {
-    background-color: #555;
-    border-radius: 10px;
-    border: 2px solid var(--color-black);
-}
-
-.scrollbar-style::-webkit-scrollbar-thumb:hover {
-    background-color: #888;
-}
 
 .main-content .col {
     width: calc(100% / 6);
