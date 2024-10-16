@@ -284,7 +284,7 @@ color: var(--color-light);
 }
 
 .sidebar-bottom img {
-    height: 14px;
+    height: 20px;
     width: auto;
     display: inline;
 }
@@ -295,7 +295,9 @@ color: var(--color-light);
     font-size: 12px;
     font-weight: 600;
 }
-
+.user-profile{
+margin-left: 3px;
+}
 hr {
     width: 90%;
     height: 1px;
