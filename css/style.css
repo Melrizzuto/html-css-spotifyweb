@@ -9,9 +9,9 @@ general (Desktop first)
     box-sizing: border-box;
 }
 
-.debug {
+/* .debug {
     border: 1px solid red;
-}
+} */
 
 /* custom properties */
 :root {
@@ -98,31 +98,6 @@ body {
     overflow: hidden;
 }
 
-.sidebar-top{
-    height: calc(100% - 50px);
-}
-
-.sidebar-bottom {
-    height: 50px;
-    background-color: var(--color-black);
-}
-
-.logo-spotify,
-.main-nav a,
-.playlist-nav a{
-    display: block;
-}
-
-.playlist-nav{
-    flex: 1 1 auto;
-    min-height: 0;
-}
-
-.playlist-nav ul{
-    flex: 1 1 auto;
-    overflow-y: auto;
-}
-
 #sidebar .main-nav img{
     height: 25px;
     width: auto;
@@ -137,6 +112,50 @@ body {
     font-weight: 600;
     margin-top: 5px;
 }
+
+.sidebar-top{
+    height: calc(100% - 50px);
+}
+
+.sidebar-bottom {
+    height: 50px;
+    background-color: var(--color-black);
+}
+
+.main-nav{
+    margin-top: 10px;
+}
+
+
+.logo-spotify,
+.main-nav a,
+.playlist-nav a{
+    display: block;
+    margin-top: 10px;
+}
+
+.playlist-nav{
+    flex: 1 1 auto;
+    min-height: 0;
+}
+
+.playlist-nav ul{
+    flex: 1 1 auto;
+    overflow-y: auto;
+}
+.main-nav a {
+    display: flex;
+    align-items: center;
+}
+
+.main-nav a img {
+    margin-right: 10px; 
+}
+
+.main-nav a span {
+    vertical-align: middle; 
+}
+
 
 .add-playlist i{
     margin: 5px 0px 0 25px;
@@ -165,6 +184,7 @@ body {
     margin: 0px 25px;
     font-size: 14px;
     color: var(--color-light);
+    margin-top: 10px;
 
 }
 
