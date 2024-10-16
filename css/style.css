@@ -488,11 +488,15 @@ footer {
     .only-mobile img {
         width: 60%;
         max-width: 100%;
-        margin: 15px 15px;
+        margin: 8px 8px;
     }
 
     .only-desktop {
         display: none;
+    }
+
+    #sidebar ul {
+        padding: 0px 1px;
     }
 
     #sidebar i {
