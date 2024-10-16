@@ -331,9 +331,21 @@
                         
                     </div>
                 </div>
-                <div class="playbar-center d-flex a-center j-center spacebetween debug">
+                <div class="playbar-center d-flex a-center f-column debug">
                    
-                    playbar center
+                    <div class="control-bar">
+                        <a class="control-btn"><i class="fas fa-random"></i></a>
+                        <a class="control-btn"><i class="fas fa-step-backward"></i></a>
+                        <a class="control-btn play"><i class="fa-regular fa-circle-play"></i></i></a>
+                        <a class="control-btn"><i class="fas fa-step-forward"></i></a>
+                        <a class="control-btn"><i class="fas fa-redo"></i></a>
+                    </div>
+            
+                    <div class="progress-bar">
+                        <span class="current-time">0:00</span>
+                        <input type="range" class="progress-slider" min="0" max="100" value="30" step="1">
+                        <span class="duration">3:45</span>
+                    </div>
                 
                 </div>
                 <div class="playbar-right d-flex a-center j-center spacebetween debug">
