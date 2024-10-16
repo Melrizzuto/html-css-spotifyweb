@@ -105,6 +105,16 @@ body {
     font-weight: 600;
 }
 
+#sidebar a{
+    text-decoration: none;
+    color: grey;
+}
+
+#sidebar a:hover {
+    color: var(--color-light);
+    line-height: 2;
+}
+
 #sidebar h3 {
     text-transform: uppercase;
     color: grey;
