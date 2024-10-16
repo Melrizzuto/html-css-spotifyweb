@@ -53,7 +53,7 @@ body {
 
 .button:hover {
     color: var(--color-light);
-    background-color: var(--color-darkgrey);
+    background-color: #888;
     transform: scale(1.1);
 }
 
@@ -221,17 +221,17 @@ main {
 }
 
 .scrollbar-style::-webkit-scrollbar {
-    width: 8px;
+    width: 10px;
   }
   
   .scrollbar-style::-webkit-scrollbar-track {
-    background: #121212; 
+    background: var(--color-black); 
   }
   
   .scrollbar-style::-webkit-scrollbar-thumb {
-    background-color: #555; /* Colore della maniglia */
-    border-radius: 10px; /* Raggio di curvatura per arrotondare i bordi */
-    border: 2px solid #121212; 
+    background-color: #555; 
+    border-radius: 10px; 
+    border: 2px solid var(--color-black); 
   }
   
   .scrollbar-style::-webkit-scrollbar-thumb:hover {
