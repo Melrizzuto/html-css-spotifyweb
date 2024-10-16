@@ -26,6 +26,7 @@
         <div class="upper-content d-flex  debug">
             <!-- Sidebar -->
             <div id="sidebar" class="debug">
+                <!-- inizia sidebar-top -->
                 <div class="sidebar-top d-flex f-column debug">
                     <div class="logo-spotify">
                         <a href="#">
@@ -66,18 +67,14 @@
                         </ul>
                     </div>
                     <div class="playlist-nav d-flex f-column only-desktop">
-                        
-                            <h3 class="debug">Playlist</h3>    
-                       
+                        <h3 class="debug">Playlist</h3>
+                        <a class="add-playlist" href="#">
+                            <i class="fa-solid fa-square-plus"></i>
+                            <span>Crea Playlist</span>
+                        </a>
 
-                        
-                            <a class="add-playlist" href="#">
-                                <i class="fa-solid fa-square-plus"></i> 
-                                <span>Crea Playlist</span>
-                            </a>
-    
                         <ul class=" scrollbar-style only-desktop debug">
-                            
+
                             <li><a href="#">Nome Playlist</a></li>
                             <li><a href="#">Nome Playlist</a></li>
                             <li><a href="#">Nome Playlist</a></li>
@@ -89,9 +86,26 @@
 
                         </ul>
                     </div>
-                    <div class="sidebar-bottom debug">
-                    </div>
+                </div>
+                <!-- inizia sidebar-bottom -->
+                <div class="sidebar-bottom d-flex f-column debug">
+                    <div class="install">
+                       
+                        <a href=""> 
+                            <img src="./img/download.svg" alt="icona installa">
+                            <span class="only-desktop">
+                            Installa app</span>
+                        </a>
+                        <hr>
 
+                    </div>
+                    <div class="user-profile">
+                        <a href="">
+                            <img src="./img/profile.svg" alt="icona user">
+                            <span class="only-desktop">John Doe</span>
+                        </a>
+
+                    </div>
 
                 </div>
 

@@ -9,9 +9,9 @@ general (Desktop first)
     box-sizing: border-box;
 }
 
-.debug {
+/* .debug {
     border: 1px solid red;
-}
+} */
 
 /* custom properties */
 :root {
@@ -90,6 +90,7 @@ body {
     justify-content: center;
 }
 
+
 .f-wrap {
     flex-wrap: wrap;
 }
@@ -123,18 +124,6 @@ body {
     overflow: hidden;
 }
 
-#sidebar a {
-    text-decoration: none;
-    color: grey;
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-
-#sidebar a:hover {
-    color: var(--color-light);
-    line-height: 2;
-}
-
 #sidebar h3 {
     text-transform: uppercase;
     color: grey;
@@ -142,7 +131,25 @@ body {
     font-size: 14px;
     color: var(--color-light);
     margin-top: 10px;
+    
+}
 
+/* settings sidebar-top */
+
+.sidebar-top{
+    height: calc(100% - 90px);
+}
+
+#sidebar .sidebar-top a {
+    text-decoration: none;
+    color: grey;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#sidebar .sidebar-top a:hover {
+    color: var(--color-light);
+    line-height: 2;
 }
 
 #sidebar i {
@@ -167,14 +174,7 @@ body {
     margin-top: 5px;
 }
 
-.sidebar-top{
-    height: calc(100% - 50px);
-}
-
-.sidebar-bottom {
-    height: 50px;
-    background-color: var(--color-black);
-}
+/* sidebar-top main nav settings */
 
 .main-nav{
     margin-top: 10px;
@@ -241,6 +241,59 @@ body {
 .logo-spotify:hover {
     transform: scale(1.1);
 }
+
+/* .sidebar-bottom settings */
+
+.sidebar-bottom {
+    height: 90px;
+    background-color: var(--color-black);
+}
+
+.sidebar-bottom a {
+    text-decoration: none;
+    color: grey;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.sidebar-bottom a:hover {
+    color: var(--color-light);
+}
+
+.sidebar-bottom img{
+    height: 14px;
+    width: auto;
+    display: inline;
+}
+
+.install,
+.user-profile{
+    margin-left: 10px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+hr{
+    width: 90%;
+    height: 1px;
+}
+
+.sidebar-bottom a {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-bottom a img {
+    margin-right: 10px; 
+}
+
+.main-nav a span {
+    vertical-align: middle; 
+}
+
+
+
+
 
 
 
