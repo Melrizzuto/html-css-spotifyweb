@@ -234,13 +234,6 @@ body {
     margin: 0 25px;
 }
 
-.logo-spotify {
-    transition: transform 0.5s ease;
-}
-
-.logo-spotify:hover {
-    transform: scale(1.1);
-}
 
 /* .sidebar-bottom settings */
 
@@ -250,14 +243,20 @@ body {
 }
 
 .sidebar-bottom a {
-    text-decoration: none;
     color: grey;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
     margin-bottom: 10px;
-    margin-left: 20px;
     margin-top: 10px;
+    margin-left: 20px;
+    padding-left: 10px;
+    transition: transform 0.5s ease;
+
 }
 .sidebar-bottom a:hover {
     color: var(--color-light);
+    transform: scale(1.1);
 }
 
 .sidebar-bottom img{
@@ -268,7 +267,7 @@ body {
 
 .install,
 .user-profile{
-    margin-left: 10px;
+    padding-left: 10px;
     font-size: 12px;
     font-weight: 600;
 }
@@ -278,10 +277,6 @@ hr{
     height: 1px;
 }
 
-.sidebar-bottom a {
-    display: flex;
-    align-items: center;
-}
 
 .sidebar-bottom a img {
     margin-right: 10px; 
@@ -289,6 +284,14 @@ hr{
 
 .main-nav a span {
     vertical-align: middle; 
+}
+
+#sidebar .sidebar-bottom a{
+    border-left: 2px solid transparent;
+}
+
+#sidebar .sidebar-bottom a:hover{
+    border-left: 2px solid var(--color-highlight);
 }
 
 
@@ -589,4 +592,12 @@ footer {
         font-size: 20px;
         padding-bottom: 10px;
     }
+
+    .sidebar-bottom img{
+        height: 25px;
+    }
+   
+
+    
+        
 }
