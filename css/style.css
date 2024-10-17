@@ -9,9 +9,9 @@ general (Desktop first)
     box-sizing: border-box;
 }
 
-.debug {
+/* .debug {
     border: 1px solid red;
-}
+} */
 
 /* custom properties */
 :root {
@@ -457,6 +457,10 @@ main {
     font-size: 16px;
 }
 
+.card h3:nth-child(2) {
+    text-overflow: ellipsis;
+}
+
 .card-text small {
     color: #b3b3b3;
 }
@@ -515,21 +519,21 @@ footer {
 
 .playbar-left {
     flex: 0 0 auto;
-    width: 25%;
+    width: 20%;
     display: flex;
     margin: 10px 10px;
 }
 
 .playbar-center {
     flex: 0 0 auto;
-    width: 45%;
+    width: 60%;
     display: flex;
     margin: 10px 10px;
 }
 
 .playbar-right {
     flex: 0 0 auto;
-    width: 25%;
+    width: 20%;
     display: flex;
     margin: 10px 10px;
 }
@@ -581,33 +585,31 @@ footer i {
     margin: 0 10px;
 }
 
-.progress-slider {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 100%;
+input[type="range"]{
+    accent-color: var(--color-highlight);
     height: 4px;
+    outline: none;
+    flex-grow: 1;
+    width: 100%;
     background: var(--color-lightgrey);
     border-radius: 2px;
-    outline: none;
-}
 
-.progress-slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 16px;
-    height: 16px;
-    background: var(--color-highlight);
-    border-radius: 50%;
-    cursor: pointer;
 }
+input[type="range"]::-webkit-slider-thumb {
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background: var(--color-highlight);
+    cursor: pointer;
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+  }
 
-.progress-slider::-moz-range-thumb {
-    width: 16px;
-    height: 16px;
-    background: var(--color-highlight);
-    border-radius: 50%;
-    cursor: pointer;
-}
+  input[type="range"]:hover::-webkit-slider-thumb {
+    opacity: 1;
+  }
+
+
 
 .fa-circle-play{
     font-size: 25px;
@@ -637,9 +639,6 @@ footer i {
         width: calc(100% / 2);
     }
 
-    .card h3:nth-child(2) {
-        text-overflow: ellipsis;
-    }
 
     ul li a {
         padding: 0px 10px;
@@ -723,9 +722,4 @@ footer i {
         margin-left: 0px;
     }
 
-    #sidebar .main-nav a:hover {
-        border-left: none;
-        color: inherit;
-        line-height: inherit;
-    }
 }
