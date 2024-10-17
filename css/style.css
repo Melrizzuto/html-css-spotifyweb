@@ -506,8 +506,8 @@ footer {
 }
 
 
-.playbar-left img {
-    width: 30%;
+.album-cover img {
+    width: 100%;
     max-width: 100%;
     object-fit: cover;
 }
@@ -523,7 +523,9 @@ footer {
     display: flex;
     margin: 10px 10px;
 }
-
+.album-cover{
+    width: 20%;
+}
 .playbar-center {
     flex: 0 0 auto;
     width: 60%;
@@ -644,6 +646,14 @@ input[type="range"]::-webkit-slider-thumb {
         padding: 0px 10px;
         font-size: 10px;
     }
+
+    .preferences{
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -721,5 +731,7 @@ input[type="range"]::-webkit-slider-thumb {
     .sidebar-bottom a {
         margin-left: 0px;
     }
+
+    
 
 }
