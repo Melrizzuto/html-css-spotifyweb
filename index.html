@@ -310,7 +310,7 @@
         </div>
         <!-- Playbar -->
         <footer class="debug">
-            <div class="playbar d-flex spacebetween">
+            <div class="playbar d-flex a-center j-center spacebetween">
                 <div class="playbar-left spacebetween debug">
 
                     <div class="album d-flex a-center debug ">
@@ -343,14 +343,18 @@
             
                     <div class="progress-bar">
                         <span class="current-time">0:25</span>
-                        <input type="range" class="progress-slider" min="0" max="100" value="30" step="1">
+                        <input class="progress-slider" type="range"  min="0" max="100" value="30" step="1">
                         <span class="duration">4:35</span>
                     </div>
                 
                 </div>
                 <div class="playbar-right d-flex a-center j-center spacebetween debug">
-                   
-                    playbar dx
+                   <ul class="menu-list d-flex a-center spacebetween">
+                    <li><i class="fa-solid fa-list-ul"></i></li>
+                    <li><i class="fa-solid fa-display"></i></li>
+                    <li><i class="fas fa-volume-up"></i></li>
+                    <li><input class="volume-slider" type="range" value="100" min="0" max="100"></li>
+                   </ul>
                 
                 </div>
 
