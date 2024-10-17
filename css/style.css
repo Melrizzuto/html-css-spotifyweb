@@ -283,11 +283,15 @@ ul li a:hover {
     align-items: center;
     margin-bottom: 10px;
     margin-top: 10px;
+    padding: 0 15px;
+    border-left: 2px solid transparent;
 
 }
 
 .sidebar-bottom a:hover {
+    border-left: 2px solid var(--color-highlight);
     line-height: 1;
+
 }
 
 .sidebar-bottom img {
@@ -817,4 +821,23 @@ li i:hover {
         transition: 0.8s ease;
         padding: 5px;
     }
+
+    .sidebar-bottom a img:hover{
+        transform: scale(1.1);
+
+    }
+    .sidebar-bottom a {
+        padding: 0 5px;
+    
+    }
+
+    #sidebar a:hover {
+        line-height: 1.0;
+    }
+
+    ul li a {
+        transition: none;
+        margin: 6px;
+    }
+    
 }
